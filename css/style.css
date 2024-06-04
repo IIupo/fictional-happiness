@@ -258,12 +258,6 @@ header {
 }
 }
 
-@media screen and (min-width: 720px){
-    .menu_sidebar {
-    display: none;
-}
-}
-
 .header_nav-tel-lap {
     display: flex;    
     flex-wrap: wrap;
@@ -429,4 +423,10 @@ a {
 .menu_info {
     visibility: inherit;
     padding-top: 60%;
+}
+
+@media screen and (min-width: 720px){
+    .menu_sidebar {
+    display: none;
+}
 }
