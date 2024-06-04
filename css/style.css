@@ -344,7 +344,9 @@ a {
 }
 
 .menu_sidebar {
-    transform: translateY(-490px);
+    position: absolute;
+    top: 45px;
+    left: 0px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -360,6 +362,7 @@ a {
 }
 
 .menu_info {
+    visibility: inherit;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -371,6 +374,7 @@ a {
 }
 
 .menu_marketplace {
+    visibility: inherit;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -382,38 +386,47 @@ a {
 }
 
 .menu_krestik {
+    visibility: inherit;
     max-width: 20px;
     max-height: 20px;
 }
 
 .menu_main {
+    visibility: inherit;
     padding: auto;
 }
 
 .menu_marketplace {
+    visibility: inherit;
     padding: auto;
 }
 
 .menu_wyg {
+    visibility: inherit;
     padding: auto;
 }
 
 .menu_links {
+    visibility: inherit;
     padding: auto;
 }
 
 .menu_business_res {
+    visibility: inherit;
     padding: auto;
 }
 
 .menu_stages {
+    visibility: inherit;
     padding: auto;
 }
 
 .menu_feedback {
+    visibility: inherit;
     padding: auto;
 }
 
 .menu_info {
+    visibility: inherit;
     padding-top: 60%;
 }
