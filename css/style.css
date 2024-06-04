@@ -86,9 +86,9 @@ header {
 }
 .rectangle27 {
     position: relative;
-    width: 15px;
+    width: 41px;
     height: 4px;
-    background: rgb(107, 90, 249);
+    background: rgb(11, 204, 11);
     left: 24.39%;
     right: 39.02%;
  }
@@ -389,9 +389,16 @@ a {
     align-self: flex-end;
 }
 
+@media screen and (max-width: 360px){
+    .menu_sidebar>*:first-child {
+    align-self: stretch;
+}
+}
+
 .menu_krestik {
     padding-top: 5px;
     padding-right: 5px;
+    padding-left: 5px;
     visibility: inherit;
     max-width: 20px;
     max-height: 20px;
@@ -446,10 +453,5 @@ a {
 @media screen and (min-width: 720px){
     .menu_sidebar_leftspace {
     display: none;
-}
-}
-@media screen and (max-width: 360px){
-    .menu_sidebar>*:first-child {
-    align-self: stretch;
 }
 }
