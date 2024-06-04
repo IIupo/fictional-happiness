@@ -337,7 +337,19 @@ a {
     magring: 0;
 }
 
+.menu_sidebar_leftspace {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    background: rgb(26, 24, 24);
+    opacity: 0.6;
+    height: 100vh;
+    width: 100vw;
+}
+
 .menu_sidebar {
+    opacity: 1;
     position: absolute;
     top: 45px;
     left: 0px;
@@ -345,14 +357,12 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     width: 360px;
-    height: auto;
-    max-height: 1000px;
+    height: 100vh;
     background-color: white;
     align-items: center;
     color: rgb(42, 35, 103);
     font-weight: 700;
-    border: 50px;
-    border-color: dimgray;
+    justify-content: space-between;
 }
 
 .menu_info {
@@ -376,7 +386,7 @@ a {
 }
 
 .menu_sidebar>*:first-child {
-    align-self: stretch;
+    align-self: flex-end;
 }
 
 .menu_krestik {
@@ -422,11 +432,22 @@ a {
 
 .menu_info {
     visibility: inherit;
-    padding-top: 60%;
+    padding-top: 50%;
+    padding-bottom: 10%;
 }
+
 
 @media screen and (min-width: 720px){
     .menu_sidebar {
     display: none;
+}
+@media screen and (min-width: 720px){
+    .menu_sidebar_leftspace {
+    display: none;
+}
+}
+@media screen and (max-width: 360px){
+    .menu_sidebar>*:first-child {
+    align-self: stretch;
 }
 }
